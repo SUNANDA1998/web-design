@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+         
+        #dynimg{
+            width:200px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- <p id="test">helllo</p> -->
+    <button>click me</button>
+    <img id="dynimg">
+
+    <script>
+        
+        // var a= document.getElementById("")
+        // var demo = document.getElementById("test").innerHTML="hello everyone";
+        // var demo =document.getElementById("test");
+        // demo.style.backgroundColor="red"
+        // demo.style.fontSize="50px"
+        
+        function addImg(){
+           var img= document.getElementById("dynimg");
+            img.setAttribute("src","https://cdn.pixabay.com/photo/2020/12/05/15/55/christmas-tree-5806329_1280.jpg")
+            img.setAttribute("alt","demo image")
+        }
+    </script>
+</body>
+</html>

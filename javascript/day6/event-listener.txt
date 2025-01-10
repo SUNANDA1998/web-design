@@ -1,0 +1,18 @@
+
+addEventListener
+syntax:element.addEventListener(event, function){//code}
+event & function is necessary, useCapture is optional
+
+
+addEventListener
+syntax:element.removeEventListener(event, function, useCapture)
+event & function is necessary useCapture is optional
+
+
+dont use prefix like "onClick" it wont work
+click
+dblclick
+mouseover
+mousemove
+mouseout
+mouseenter

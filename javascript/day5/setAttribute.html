@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setAttribute</title>
+</head>
+<body>
+
+    <img id="image">
+    <!-- <img src="" alt=""> -->
+     <p id="jhj">
+        hello
+     </p>
+    
+    <script>
+        var img1Tag=document.getElementById("image");
+        img1Tag.setAttribute("src","https://cdn.pixabay.com/photo/2021/12/29/18/59/st-petersburg-6902540_960_720.jp");
+        img1Tag.setAttribute("alt","mansion image")
+
+        var tagChng = document.getElementById("jhj");
+        tagChng.setAttribute("style","background-color: red;color:white;font-size:20px")
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener Example</title>
+    <style>
+        #block {
+            width: 200px;
+            height: 200px;
+            background-color: burlywood;
+            text-align: center;
+            color: white;
+            font-family: Arial, sans-serif;
+            /* cursor events */
+            /* pointer-events: none; */
+            /* cursor events */
+            text-transform: capitalize;
+            cursor: pointer;
+            line-height: 200px;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="block">welcome to quickXpert</div>
+    <button id="removeListeners">Remove Listeners</button>
+
+    <script>
+    
+        const block = document.getElementById("block");
+
+        block.addEventListener("mouseover", myfunction);
+        function myfunction() {
+            this.style.backgroundColor = "yellow";
+        }
+        
+        block.addEventListener("mouseenter", changec);
+        function changec() {
+            this.style.backgroundColor = "red";
+        }
+
+        document.getElementById("removeListeners").addEventListener("click", function() {
+        block.removeEventListener("mouseover", myfunction);
+        console.log(myfunction());
+        
+        block.removeEventListener("mouseout", changec);
+        console.log(changec());
+
+
+        });
+    </script>
+</body>
+</html>
+

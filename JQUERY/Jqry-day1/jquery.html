@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height:100px;
+            background-color: red;
+        }
+
+        .box:hover{
+            border: 10px solid blue;
+            box-sizing: border-box;
+        } 
+
+        /* .text{
+            display:none;
+        } */
+    </style>
+</head>
+
+<body>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, omnis!</p>
+    <button class="btn1">click me to show</button>
+    <button class="btn2">click me to hide</button> 
+
+     <p>hello i am test in p tag</p> 
+
+    <div class="box">
+        <p class="text">hello</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+        $(".box").mouseover(function(){
+            // alert("hello")
+            $("p").slideToggle();
+        })
+        
+        $(".box").mouseover(function(){
+            // alert("hello")
+            $("p").hide("fast");
+        })
+
+        $(".btn1").click(function(){
+            // alert("hello")
+            $("p").show();
+        })
+        
+        $(".btn2").click(function(){
+             // alert("hello")
+             $("p").hide("fast");
+        })
+           
+        
+        
+
+    </script>
+
+    
+  
+</body>
+</html>

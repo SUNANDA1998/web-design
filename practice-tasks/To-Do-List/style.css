@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100%;
+    width: auto;
+    background-color: rgba(0, 0, 0, 0.847);
+}
+body>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    /* background-color: red; */
+}
+form{
+    /* background-color: aqua; */
+    height: 50%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+input{
+    width: 65%;
+    height: 30%;
+    border: 0;
+    border-radius: 20px;
+    padding: 0 30px;
+}
+
+input:focus{
+    outline: none;
+}
+select:focus{
+    outline: none;
+}
+input:focus{
+    outline: none;
+}
+
+select{
+    height: 30%;
+    border-radius: 20px;
+    padding: 0 10px;
+    border: 0;
+    background: gray;
+    color: whitesmoke;
+
+
+}
+#btn{
+    height: 30%;
+    border-radius: 20px;
+    padding: 0 10px;
+    border: 0;
+    background-color: greenyellow;
+}
+#taskcontainer{
+    /* background-color: beige; */
+    height: auto;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 15px;
+    padding: 20px;
+    flex-wrap:wrap;
+}
+.renderedTask{
+    min-height: 100px;
+    min-width: 200px;
+    width: min-content;
+    height: min-content;
+    border: 2px solid #ffff33;
+    color:white;
+    padding: 10px;
+    
+}
+
+.renderedTask h6{
+    font-size: larger;
+    height: fit-content;
+    width: max-content;
+    padding: 2px 5px;
+    margin-bottom: 10px;
+
+
+}
+
+.renderedTask h5{
+    font-size: large;
+    background-color:cadetblue;
+    height: fit-content;
+    width: max-content;
+    padding: 2px 5px;
+    margin-bottom: 10px;
+}
+
+.completebtn{
+    background-color: rgb(79, 252, 79);
+    padding: 3px 5px;
+    border: 0;
+    cursor: pointer;
+
+}
+.deletebtn{
+    background-color: rgb(252, 79, 79);
+    padding: 3px 7px;
+    border: 0;
+    color: white;
+    cursor: pointer;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes</title>
+    <style>
+        /* div{
+            width: 200px;
+            height: 200px;
+            border: 2px solid red;
+        } */
+        div img{
+            width: 200px;
+            height: 200px;
+            animation-name: Car;
+            animation-duration: 8s;
+            position: relative;
+            animation-iteration-count: infinite;
+            /* animation-tim; */
+        }
+
+        @keyframes Car {
+            from{
+                top:0;
+                left:0;
+            }
+            to{
+                top:0;
+                left:calc(100vw - 200px)
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="./image.png" alt="">
+    </div>
+</body>
+</html>

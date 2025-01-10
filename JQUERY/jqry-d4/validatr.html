@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Registration Form</h2>
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" name="name" />
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" name="phone" />
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" />
+            </div>
+            <div class="form-group">
+                <label for="confirm_password">Confirm Password</label>
+                <input type="password" id="confirm_password" name="confirm_password" />
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.21.0/jquery.validate.min.js"></script>
+   <script>
+
+    $(document).ready(function() {
+        $("#registrationForm").validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 3,
+                    regex: /^[A-Za-z\s]+$/,
+                },
+                phone: {
+                    required: true,
+                    regex:/^\d{10}$/, // regex for phone
+                },
+                password: {
+                    required: true,
+                    minlength: 6,
+                },
+                confirm_password: {
+                    required: true,
+                    equalTo: "#password",
+                }
+            },
+            messages: {
+                name: {
+                    required: "Please enter your full name",
+                    minlength: "Your name must consist of at least 3 characters",
+                    // if regex is not working then invalid format will work
+                    // regex: "Your name can only contain letters and spaces",
+                },
+                phone: {
+                    required: "Please enter your phone number",
+                    regex: "Please enter a valid phone number (e.g., (123) 456-7890 or 123-456-7890)",
+                },
+                password: {
+                    required: "Please provide a password",
+                    minlength: "Your password must be at least 6 characters long",
+                },
+                confirm_password: {
+                    required: "Please confirm your password",
+                    equalTo: "Password does not match",
+                }
+                
+            },
+            submitHandler: function(form) {
+                alert("submitted successfully")
+                form.submit();
+            }
+            
+        });
+
+        $.validator.addMethod("regex", function(value, element, pattern) {
+            return this.optional(element) || pattern.test(value);
+        }, "Invalid format");
+
+    });
+
+   </script>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK</title>
+    <style>
+        body{
+            background-color: #8327ad;
+            color: rgba(237, 241, 247, 0.63);
+            font-size: 34px;
+            text-align: center;
+            padding-top: 100px;
+            /* font-family: cursive; */
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }    
+    </style>
+</head>
+<body>
+    <script>
+        //   object array
+var student = {
+        name: "Sam",
+        lastName:"Wilson",
+        age: 30,
+        contact:[{num1:12234566,num2:898989889}],
+        hobby: {
+        singing: true,
+        reading: false, 
+        },
+        music:["Pop","English","Rock"]
+    };
+   
+
+    // get---->89898988
+    // get---->hobby->true
+    // get---->music-> snglish
+
+    document.write(JSON.stringify(student.contact[0].num2),"<br/>",
+            JSON.stringify(student.hobby.singing),"<br/>",
+            student.music[1]
+        );
+        
+
+        document.write("<hr/>");
+// -----------------------------------------------------------
+        // array of array
+        var arr = [
+                    [ 10,20,30,'book',false ],
+                    'sam','alan','john',
+                    [
+                        10.5,12,8,false,true,[
+                            1,2,3,['html'],['css','js']
+                            ],'welcome to quickxpert'
+                    ]
+                ]
+                /*
+                get html
+                get css js
+                get 'welcome to quickxpert'
+                 */
+
+                document.write(arr[4][5][3],"<br/>",
+                    arr[4][5][4],"<br/>",
+                    arr[4][6]
+        )
+               
+    
+    </script>
+</body>
+</html>

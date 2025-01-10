@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // 1) length: it gives length of Array
+        // 2) toString(): convert to String
+        // 3) join(): separate 2 Elements
+        // To add element
+        // 4) push()
+        // 5) unshift()
+        // To remove element
+        // 6) pop()
+        // 7) shift()
+        // 8) slice()
+        // 9) splice()
+        // 10) concat()
+        // 11) reverse()
+        // 12) sort()
+
+        // 1) length gives length of elements
+
+        // var arr=[10,20,30,30,50];
+        // var ar1=arr.length;
+        // document.write(ar1);
+
+        // 2) toString(): converts array elements nto string format
+        // toString() method does not change the original array
+
+        // let num = 42;
+        // const conStr= num.toString()
+        // document.write(conStr)
+        // console.log(typeof(conStr));
+        // console.log(typeof(num));
+
+        // 3] join(): separate 2 elements
+
+        // var arr=['monday','tuesday','thursday','friday','saturday'];
+        // var x=arr.join("???");
+        // document.write(x);
+
+        // 4] push(): adds elements to last by default
+
+        // var arr=['monday','tuesday','thursday','friday','saturday'];
+        // arr.push("ghghgh");
+        // document.write(arr);
+
+        // 5] unshift(): add elements to 1st
+
+        // var arr=['monday','tuesday','thursday','friday','saturday'];
+        // arr.unshift(12000);
+        // document.writeln(arr);
+
+        // 6] pop(): by default delete last elements
+
+        // var arr=["original array"+'monday','tuesday','thursday','friday','saturday' + "<br>"];
+        // var arr2=["pop array====>"+'monday','tuesday','thursday','friday','saturday'];
+        // // arr.pop()
+        // arr2.pop()
+        // // var arr2=["pop array====>"+'monday','tuesday','thursday','friday','saturay'];
+        // // document.write("<br>")
+        // document.write(arr)
+        // document.write(arr2)
+
+        // 7] shift(): delete starting element
+
+        // var arr=['monday','tuesday','thursday','friday','saturday'];
+        // arr.shift();
+        // document.write(arr);
+
+        // 8] slice(start,stop):nextract some part of array and returns new array
+        // **note**--- when u define stop it gives u previous element in op..
+
+        // var arr= [10,20,40,50,30];
+        // document.write('Original array:  '+ " "+arr+"<br>")
+        // var x=arr.slice(0,3);
+        // var x=arr.slice(3,5);
+
+        // document.write('extracted: '+ " "+x)
+
+        // 9] splice(index i.e. position 0 or 1, count to remmove, addElement1, addElement2,....)
+
+        // let fruits = ['Apple', 'Banana', 'Orange','Mango','Pineaple'];
+        //  it means after index it will delete 3 data i.e. 'Banana', 'Orange', 'Mango' and add grapes,strawberry
+        // fruits.splice(1,2, 'Grapes', 'Strawberry');
+        // fruits.splice(2,0, 'Grapes', 'Strawberry');
+
+        // document.write(fruits);    //Output: ['Apple', 'Grapes', 'Strawberry', 'Mango', 'Pineapple']
+
+        // 10] concat(): combines one or more array
+        
+        // var arr = ['monday','tuesday','thursday','friday','saturday'];
+        // var arr1 = [10,20,40,50,30];
+        // var arr2 = [true,false];
+        // var result= arr.concat(arr1,arr2);
+        // document.write(result)
+
+        // 11] reverse(): it reverse elements..i.e last becomes 1st..
+
+        // var arr=['monday','tuesday','thursday','friday',211];
+        // var x = arr.reverse();
+        // document.write(x)
+
+        // 12] sort(): sort by default in ascending to sort in descending 1st do sort() than reverse()
+        // sort for string 
+        // var arr = ['B', 'D', 'Q', 'A'];
+        // arr.sort()
+        // document.write(arr)
+
+        // var num = [4,10,25,100,55,75];
+        // num.sort()
+        // document.write(num)
+
+        // var arr1= ['B','D','Q','A',11];
+        // arr1.sort()
+        // arr1.reverse()
+        // document.write(arr1)
+
+        //  To sort for numbers we use compare function() means, normal function()
+
+        // type 1 sort:
+
+
+        // var num= [1200,4,10,25,100,55,75];
+        // num.sort(
+        //     function(a,b){
+        //         return a-b; /*a-b for ascending and b-a for descending */
+        //     })
+        //     document.write(num)
+
+        //  var num= [1200,4,10,25,100,55,75];
+        //  num.sort(function(a,b){return a-b})
+        // num.sort(function(a,b){return b-a})
+        //  document.write(num)
+
+        // type 2 sort:
+
+        var numArr= [4,10,25,100,55,75];
+        numArr.sort(arrSort);
+        function arrSort(num1,num2){
+            return num1-num2;  // num1 - num2 for ascending order
+        }
+        document.write(numArr)
+        
+
+
+
+    </script>
+</body>
+</html>

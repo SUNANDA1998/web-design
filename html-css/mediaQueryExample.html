@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mediaQuery</title>
+    <style>
+        img{
+            width: 400px;
+        }
+        div{
+            width: 500px;
+            height: 300px;
+            border: 1px solid grey;
+            background-color: teal;
+        }
+        @media screen and (max-width:500px) {
+            img{
+                width:100px;
+            }
+            h1{
+                display: none;
+            }
+        }
+
+        @media screen  and (max-width: 300px) {
+            .hello{
+                background-color: yellow;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Media Query Examples</h1>
+    <img src="https://cdn.pixabay.com/photo/2023/02/18/11/22/cactus-7797750_1280.jpg" alt="">
+    <h2>Helllllo</h2>
+    <div class="hello">
+
+    </div>
+    <div class="hey">
+
+    </div>
+</body>
+</html>

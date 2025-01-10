@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .animate{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation: example;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            position: relative;
+            transition: all .5s ease-in-out;
+            animation-timing-function: ease-in-out;
+            animation-direction: alternate;
+
+        }
+        @keyframes example{
+            from{
+                background-color: red;
+                left: 100px;
+                top: 30px;
+            }
+            to{
+                background-color: blue;
+                left: 0px;
+                top: 0%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="animate"></div>
+</body>
+</html>

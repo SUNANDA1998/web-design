@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza templte</title>
+    <style>
+        img{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+
+        .veg_pizza{
+            display: flex;
+            justify-content: center;
+            gap: 90px;
+        }
+
+        .meat_pizza{
+            display: flex;
+            justify-content: center;
+            gap: 90px;
+            margin-top: 50px;
+        }
+
+        .pizza_slice{
+            border: 1px solid #eee;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .main_pizza{
+            display: flex;
+            align-items: center;
+            background-image: linear-gradient(#171010e4,#220a0acc),url(https://img.freepik.com/free-vector/blackboard-background-with-pizza_23-2148907816.jpg);
+            padding: 50px;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            justify-content: center;
+        }
+
+        del{
+            color: red;
+        }
+        p{
+            color: #fff;
+            font-size: 22px;
+        }
+
+        h1{
+            font-size: 30px;
+            color: #fff;
+            margin-bottom: 30px;
+            text-shadow: 5px -5px 5px #fff;
+        }
+
+        span{
+            color:yellow;
+        }
+    </style>
+</head>
+<body>
+    <section class="main_pizza">
+    <h1 style="text-align:center">Welcome to <span>P</span>izza <span>P</span>alace</h1>
+
+       <div class="veg_pizza">
+            <div class="pizza_slice">
+                <div style="display: flex;justify-content: center;">
+                    <img src="https://cdn.pixabay.com/photo/2017/08/06/06/43/pizza-2589575_1280.jpg" alt="pizz_one">
+                </div>
+                <p>6' pizza just for <del> $55 </del> $22 </p>
+            </div>
+
+            <div class="pizza_slice">
+                <div style="display: flex;justify-content: center;">
+                  <img src="https://cdn.pixabay.com/photo/2024/04/23/09/32/ai-generated-8714517_1280.jpg" alt="pizz_two">
+                </div>
+                <p>6' pizza just for <del>$55</del>$22</p>
+
+            </div>
+
+            <div class="pizza_slice">
+                <div style="display: flex;justify-content: center;">
+                    <img src="https://cdn.pixabay.com/photo/2024/03/15/16/25/pizza-8635314_1280.jpg" alt="pizz_three">
+                </div>
+                <p>6' pizza just for <del>$55</del>$22</p>
+            </div> 
+        </div>
+
+        <div class="meat_pizza">
+            <div class="pizza_slice">
+                <div style="display: flex;justify-content: center;">
+                 <img src="https://cdn.pixabay.com/photo/2021/12/30/11/33/italian-cuisine-6903774_1280.jpg" alt="pizz_fr">
+                </div>
+                <p>6' pizza just for <del> $55 </del> $22 </p>
+
+            </div>
+            <div class="pizza_slice">
+                <div style="display: flex;justify-content: center;">
+                    <img src="https://cdn.pixabay.com/photo/2020/04/29/03/30/pizza-5107039_1280.jpg" alt="piza_fve">
+                </div>
+                <p>6' pizza just for <del> $55 </del> $22 </p>
+
+            </div>
+            <div class="pizza_slice">
+                <div style="display: flex;justify-content: center;">
+                <img src="https://cdn.pixabay.com/photo/2023/03/20/04/09/pizza-7863713_1280.jpg" alt="piz_lst">
+
+                </div>
+                <p>6' pizza just for <del> $55 </del> $22 </p>
+            </div> 
+        </div>
+    </section>
+</body>
+</html>

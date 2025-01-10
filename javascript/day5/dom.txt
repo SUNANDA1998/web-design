@@ -1,0 +1,62 @@
+DOM -Document Object Model
+
+what is dom?
+when the web page is loaded dom is called first.
+The DOM is a W3C (World Wide Web Consortium) standard.
+The W3C Document Object Model (DOM) is a platform and 
+language-neutral interface that allows programs and scripts to 
+dynamically access and update the content, structure, and style of a document.
+
+The W3C DOM is separated into 3 parts:
+
+Core DOM - standard model for all document types
+XML DOM - standard model for XML documents
+HTML DOM - standard model for HTML documents
+
+There are various types of methods are properties in DOM
+ some methods:
+1) document.getElementByid
+syntax:document.getElementByid(id)
+
+2) document.getElementsByName
+syntax:document.getElementsByName(name of class)
+
+3) document.getElementsByTagName
+syntax:document.getElementsByTagName(tag name) i.e p tag,div,tag etc
+
+some properties:
+.innerHTML
+.innerText
+
+setAttribute -- name of attribute like placeholder,alt
+syntax(.setAttribute("placeholder","firstname"))
+
+some styling properties
+document.getElementById("").style.background="red"
+choose style with any css properties like color,fontsize,background etc
+
+4)querySelector() :it  returns the first element that match your css selector
+for eg if there are:
+<p>hello world</p>
+<p>happy world</p>
+
+in above if u apply 
+document.querySelector("p").style.background = "brown";
+
+in this your selector can by 
+tag-name i.e <p> ,<div>
+class-name i.e ".demo"
+id-name i.e "#id"
+
+then it will only apply for "hell world" not "happy world"
+
+5) querySelectorAll():it is not like querySelector it will take all tag or class defined by user
+for eg if there are:
+<p>hello world</p>
+<p>happy world</p>
+
+document.querySelector("p").style.background = "brown";
+ so all the <p> tag will be of background colour brown
+
+
+

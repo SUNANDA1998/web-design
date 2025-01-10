@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add/remove event listener</title>
+
+    <style>
+        #block{
+            margin: 10px 0px;
+            width: 300px;
+            height: 200px;
+            border: 2px solid black;
+            padding: 10px 10px;
+            text-align: center;
+            /* pointer-events: none; */
+            cursor: pointer;
+        }
+
+        #btn{
+            padding: 4px 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    
+
+
+    <!-- <button id="btn">click here</button> -->
+    <div id="block">welcome</div>
+   
+    <script>
+        // type:3
+        // document.getElementById("block").addEventListener("mouseover",myfunction);
+        //     function myfunction() {
+        //         alert("hii")
+        //         this.style.backgroundColor="yellow";
+        //         this.style.color="red";
+        //     }
+
+        // document.getElementById("block").addEventListener("mouseout",changec);
+        //     function changec(){
+        //         this.style.backgroundColor="red";
+        //     }
+
+            // document.getElementById("block").removeEventListener("click",changec);
+            
+            // function changec(){
+            //     alert('remove listener');
+
+            // }
+           
+        
+        // -------------------add event listener-------------------------------------------------------------------------------------------------------
+        // type:1
+        // var btn=document.getElementById("btn");
+        // btn.addEventListener("click",function(){
+        //     alert("hello everyone with type 1")
+        // });
+
+        
+        // type:2
+        // btn1.addEventListener("mouseover",function(){
+        //     alert('you clicked the buton with type 2');
+        // })
+
+        // type:3
+        // btn.addEventListener("mouseenter",quckxprt,add)
+
+        // function quckxprt(){
+        //     alert('clicked type 3')
+        //     console.log(btn);
+            
+        // }
+
+        // function add(){
+        //     alert('clicked type 3 with add')
+        // }
+
+
+        // -------------------remove event listener--------------------
+
+        // btn.removeEventListener("click",function clk(){
+        //     alert('you clicked the button');
+        // })
+
+        // btn.addEventListener("mouseenter",clk);
+        // function clk(){
+        //     alert('remove listener')
+        // }
+    </script>
+</body>
+</html>

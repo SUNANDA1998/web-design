@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            display: flex;
+            /* width: 100px;
+            height: 100px; */
+            /* background-color: red; */
+        }
+
+        img{
+            /* display: flex; */
+            width:100px;
+            height:100px;
+        }
+
+        .div1 {
+	padding: 25px;
+	max-width: 295px;
+	border: 1px solid rgb(66, 66, 66);
+	background-color: #eec513;
+	margin-top: 20px;
+	text-align: justify;
+}
+
+.removeDiv {
+	display: block;
+	margin-top: 20px;
+	cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <h1>Demo</h1>
+    <div>
+        <div id="div1" class="div1">
+            This is some text in the div. 
+            <p>This is a paragraph in the div.</p> 
+            <p>This is other paragraph in the div. </p>
+            <img src="https://cdn-icons-png.flaticon.com/512/51/51517.png"  id="remove-btn" alt="">
+        </div>
+    </div>
+    <button id="remove-btn" class="removeDiv">Remove above div</button>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function () {
+        $("#remove-btn").click(function () {
+            $("#div1").fadeOut("slow")
+            // $("#remove-btn1").fadeOut("slow")
+        // to remove the button
+        // $(this).fadeOut("fast", function () {
+        // $(this).remove();
+        // });
+        });
+        });
+    </script>
+</body>
+</html>

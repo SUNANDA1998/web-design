@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get by id</title>
+    <link rel="icon" href="https://quickxpertinfotech.com/assets/img/quickxpert-logo3.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- onchange -->
+    <input type="text" id="myInput" onchange="displayValue()">
+    <div id="displayDiv"></div>
+
+    <!-- onhover -->
+    <!-- <button onmouseover="call()">click me</button>
+    <p id="test"></p> -->
+
+    <script>
+
+        // onclick
+        // function call(){
+        //     var demo= document.getElementById('test').innerHTML="hello";
+        // }
+
+        function displayValue() {
+        var inputValue = document.getElementById('myInput').value;
+            
+        document.getElementById('displayDiv').innerHTML = inputValue;
+        }
+        
+    </script>
+</body>
+</html>

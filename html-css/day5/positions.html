@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        /* .box1,.box2,.box3{
+        width: 200px;
+        height: 200px;
+        background-color: rgb(102,51,51);
+        margin: 10px;
+        } */
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            box-shadow: 10px 10px 5px red;
+            position: absolute;
+            top:0px;
+            left: 0px;
+        }
+
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            position: absolute;
+            z-index: -1;
+            left: 28px;
+            top: 31px;
+            margin: 10px;
+            box-shadow: 5px 5px 5px blue;
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            position: absolute;
+            z-index: -2;
+            left: 77px;
+            top: 79px;
+            box-shadow: 5px 5px 5px  green;
+
+        }
+
+        .mainBox{
+            display: flex;
+        }
+    </style>
+<body>
+    <section class="mainBox">
+        <div class="box1">
+
+        </div>
+        <div class="box2">
+    
+        </div>
+        <div class="box3">
+    
+        </div >
+        
+    </section>
+</body>
+</html>

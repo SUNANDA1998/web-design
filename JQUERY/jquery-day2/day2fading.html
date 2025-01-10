@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fading Jquery</title>
+
+    <style>
+        .box1{
+            width:80px;
+            height:80px;
+            /* if u want to work with fadin() uncomment display none  */
+            /* if u want to work with fadeOut(),fadeTo()& delay() comment display none */
+           display: none;
+           /* visibility: hidden; */
+            background-color:red;
+            /* margin-top: 2rem; */
+        }
+        .box2{
+            width:80px;
+            height:80px;
+            /* display: none; */
+            background-color:blue;
+        }
+        .box3{
+            width:80px;
+            height:80px;
+           /* display: none; */
+            background-color:rgba(255, 0, 0, 0.397);
+        }
+    </style>
+</head>
+<body>
+
+    <button>Click me for fading</button>
+    <div style="display: flex;justify-content: space-evenly;">
+
+        <div class="box1" ></div>
+
+        <br>
+
+        <div class="box2"></div>
+
+        <br>
+        
+        <div class="box3"></div>
+
+        
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").hover(function(){
+                /*
+                methods in jquery
+                fadeIn(); ---- > while using fadein apply display none on ur selector
+                fadeOut();---- > while using fadeout dont apply display none on ur selector
+                fadeToggle();--- > no need to add none on selector
+                fadeDelay(); --- > it takes one property to be delyed for eg:$(".box1").fadeIn(2000).Delay;
+                fadeTo();  --- > it takes two arguments(time,opacity)
+                 */
+                // fadeIn
+                // $(".box1").fadeIn();
+                // $(".box1").fadeIn('slow');
+                // $(".box1").fadeIn(2000);
+
+                // // FadeOut in css comment display none to work with fadeOut
+                // $(".box1").fadeOut();
+                // $(".box2").fadeOut("slow");
+                // $(".box3").fadeOut(2000);
+
+                // // fadeToggle // no need to display none for fadeToggle do as per requirement
+                // $(".box1").fadeToggle();
+                // $(".box2").fadeToggle("slow");
+                // $(".box3").fadeToggle(1000);
+
+                // fadeDelay
+                // $(".box2").fadeToggle().delay(3000); // afer 3 seconds it will appear
+                // $(".box2").delay(2000) // it will not work
+
+                // fadeTo() in css comment display none to work with fadeTo
+                // it has (time,opacity) in rgument
+                // $(".box3").fadeTo(3000,.9) // it will work like opacity
+            })
+        })
+    </script>
+</body>
+</html>

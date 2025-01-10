@@ -1,0 +1,33 @@
+what is jquery ?
+
+jquery is javascript library it is mostly used for text effects and animation for creating web pages.
+jquery is light weight and it is used in cross platform means it can run on any windows or mac os.
+jquery is write less and do more js library.
+
+how to use jquery?
+there r 2ways to use it
+1st) copy the cdn link paste it in ur html body
+go to jquery -->cdn uncompressed copy the script
+2) download it from jquery website
+download jquery -->1)click on download jquery copy the script ctrl+a ctrl+c
+create filename.js and paste
+2) in html end of body tag call that file
+
+how to write jquery?
+there are two ways
+1)in your body write it in script tag
+2)create filename.js and write it in that file
+
+syntax to write jquery
+syntax: $(selector).action()
+
+$ sign to define/access jQuery
+(selector) to "query (or find)" HTML elements
+jQuery action() to be performed on the element(s)
+
+syntax:
+ $(document).ready(function(){
+      code
+ })
+
+

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Validation</title>
+</head>
+<body>
+
+    <form action="" id="myForm">
+       Name: <input type="text" id="name"> <br>
+        <span id="usercheck" style="color: red;">**Name must b filed**</span><br> <br>
+
+
+        <input type="submit" value="submit">
+    </form>
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#usercheck").hide()
+
+            $("#name").keyup(function(){
+                validateName();
+            })
+
+            function validateName(){
+                var nameValue = $("#name").val();
+
+                if(nameValue.length === 0){
+                    $("#usercheck").html("name must be filled").show();
+                    return false;
+                }
+
+                else if(nameValue.length < 3 || nameValue.length > 6){
+                    $("#usercheck").html("length must be between 3 & 6").show();
+                    return false;
+                }
+
+                else if(nameValue.length =="" || nameValue.length == null){
+                    $("#usercheck").html("length must be between 3 & 6").show();
+                    return false;
+                }
+
+                else {
+                     $("#usercheck").hide();
+                     return true;
+                }
+            }
+          
+            
+            $("#myForm").submit(function(event){
+               event.preventDefault();
+
+               if(validateName()){
+                alert("form submitted successfully");
+               
+               }
+
+               else{
+                alert("something went wrong");
+                
+               }
+            })
+        })
+    </script>
+</body>
+</html>

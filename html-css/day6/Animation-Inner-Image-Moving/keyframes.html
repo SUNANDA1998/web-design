@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-image:linear-gradient(rgb(190, 54, 231),rgb(5, 237, 218));
+            /* height: 100vh; */
+        }
+        .outer_div{
+            /* border: 2px solid green; */
+            height: calc(400px + 40px);
+            position: relative;
+            /* background-color: rgb(0, 0, 0); */
+        }
+        .sliding_img{
+            width: 40px;
+            height: 40px;
+            /* border: 2px solid red; */
+            box-sizing: border-box;
+            animation-name: car;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            position: absolute;
+        }
+        .inner_div{
+            /* border: 2px solid grey; */
+            /* box-sizing: border-box; */
+            height: calc(400px - 40px);
+            width: calc(100% - 40px - 40px );
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-image: linear-gradient(red,white);
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .inner_div audio{
+            width: 650px;
+            background-color: #f01d1d;
+            padding: 20px;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+        .inner_div img{
+            height: calc(400px - 40px);
+            width: calc(400px - 40px);
+            border-radius: 50%;
+            border: 5px solid rgb(255, 158, 247);
+            box-sizing: border-box;
+            animation: lion 9s linear infinite;
+            /* animation-duration: 5s;
+            animation-iteration-count: infinite; */
+            /* animation-timing-function: ; */
+        }
+        @keyframes car {
+            0%{
+                top: 0px;
+                left:0px;
+                background-image: linear-gradient(red,white);
+                box-shadow:0px 0px 5px 2px white ;
+                border-radius: 50%;
+
+                
+            }
+            25%{
+                top:0px;
+                left:calc(100vw - 40px);
+                background-image: linear-gradient(blue,rgb(5, 237, 218));
+                box-shadow:0px 0px 5px 2px white ;
+                border-radius: 50%;
+                
+            }
+            50%{
+                top:400px;
+                left:calc(100vw - 40px);
+                background-image: linear-gradient(white,purple);
+                box-shadow:0px 0px 5px 2px white ;
+                border-radius: 50%;
+
+            }
+            75%{
+                top:400px;
+                left: 0px;
+                background-image: linear-gradient(rgb(255, 242, 0),rgb(234, 11, 52));
+                box-shadow:0px 0px 5px 2px white ;
+                border-radius: 50%;
+
+            }
+            100%{
+                top: 0px;
+                left:0px;
+                background-image: linear-gradient(red,white);
+                box-shadow:0px 0px 5px 2px white ;
+                border-radius: 50%;
+            }
+        }
+
+        @keyframes lion {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="outer_div">
+        <div class="inner_div">
+            <img src="./Screenshot_20231113_133342_Instagram.jpg" alt="">
+            <audio autoplay loop controls src="./showreel-music-promo-advertising-opener-vlog-background-intro-theme-261601.mp3"></audio>
+        </div>
+        <div class="sliding_img">
+            <!-- <img class="sliding_img" src="./mage_search_1670864485090.jpg" alt=""> -->
+        </div>
+    </div>
+</body>
+</html>

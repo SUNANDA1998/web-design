@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #f1f1f1;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="btns">
+        <button onclick="addimg()">Click Me</button>
+    </div>
+
+    <img id="dynimg">
+
+    <script>
+        function addimg() {
+            var img = document.getElementById("dynimg");
+            img.setAttribute(
+                "src",
+                "https://cdn.pixabay.com/photo/2022/11/13/21/32/holly-7590229_640.jpg"
+            );
+        }
+    </script>
+
+</body>
+
+</html>

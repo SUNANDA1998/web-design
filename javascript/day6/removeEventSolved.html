@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener Example</title>
+    <style>
+        #block {
+            width: 200px;
+            height: 200px;
+            background-color: burlywood;
+            text-align: center;
+            color: #000;
+            cursor: pointer;
+            line-height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="block">welcome to quickXpert</div>
+    <button id="removeListeners">Remove Listeners</button>
+
+    <script>
+        const block = document.getElementById("block");
+
+        block.addEventListener("mouseover", myfunction);
+        function myfunction() {
+            this.style.backgroundColor = "yellow";
+        }
+
+        block.addEventListener("mouseout", changec);
+        function changec() {
+            this.style.backgroundColor = "red";
+        }
+
+            document.getElementById("removeListeners").addEventListener("click", function() {
+
+            // block.style.backgroundColor = ""; // it will take the bg color define in ur css 
+            block.style.backgroundColor = "transparent";
+
+
+            // this will give yellow bg color after click on button
+            // block.removeEventListener("mouseenter", myfunction);
+            // block.removeEventListener("mouseout", changec);   
+
+            // this will give red bg after click on button
+            // block.removeEventListener("mouseenter", myfunction); 
+            // block.removeEventListener("mouseover", changec);
+            // block.removeEventListener("mouseover", myfunction); 
+
+            // this code wont add any bg color once u click button
+            block.removeEventListener("mouseenter", myfunction);  
+            block.removeEventListener("mouseout", changec);    
+            block.removeEventListener("mouseover", myfunction);
+
+        });
+    </script>
+</body>
+</html>

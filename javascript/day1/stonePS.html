@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+</head>
+<body>
+   <script>
+        var player1 = prompt("type stone,paper or scisor")
+        var player2 = prompt("type stone,paper or scisor")
+
+        //stone
+        if(player1=="stone" && player2=="stone"){
+            alert("its a tie")
+        }
+        else if(player1=="stone" && player2=="paper"){
+            alert("paper wins")
+        }
+        else if(player1=="stone" && player2=="sicsor"){
+            alert("stone wins")
+        }
+        //paper
+        else if(player1=="paper" && player2=="paper"){
+            alert("its a tie")
+        }
+        else if(player1=="paper" && player2=="stone"){
+            alert("paper wins")
+        }
+        else if(player1=="paper" && player2=="scisor"){
+            alert("scisor wins")
+        }
+        //scisor
+        else if(player1=="scisor" && player2=="scisor"){
+            alert("its a tie")
+        }
+        else if(player1=="scisor" && player2=="paper"){
+            alert("scisor wins")
+        }
+        else if(player1=="scisor" && player2=="stone"){
+            alert("stone wins")
+        }
+        else{
+            document.write("something went wrong")
+        }
+        
+        
+        
+   </script> 
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Schedule using Inline Block</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        section{
+            width:900px;
+            margin: 0 auto;
+        }
+        .heading{
+            background-color: teal;
+            color: aliceblue;
+            padding: 0 10px;
+        }
+        .heading h2{
+            display: inline-block;
+            font-family: monospace;
+            width:49%;
+        }
+        .details{
+            padding: 0 10px;
+        }
+        .details div{
+            display: inline-block;
+            box-sizing: border-box;
+            vertical-align: top;
+            padding-right: 40px;
+            font-family: sans-serif;
+            font-weight: bold;
+            color: teal;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="heading">
+            <h2 style="text-align: left;">FLIGHT:Cape Town to Istanbul(TK41)</h2>
+            <h2 style="text-align: right;">Thursday, June 30</h2>
+        </div>
+        <div class="details">
+            <div class="date">
+                <p>Date:</p>
+                <p>Airline:</p>
+                <p>Flight:</p>
+                <p>From:</p>
+                <p>To:</p>
+                <p>Class:</p>
+                <p>Stops:</p>
+                <p>Status:</p>
+                <p>In flight:</p>
+                <p>Service:</p>
+                <p></p>
+                <p></p>
+            </div>
+            <div class="day">
+                <p>June 30,2016(Thu)</p>
+                <p>Turkish Airlines Inc</p>
+                <p>TK41 (Operated by Turkish Airlines Inc)</p>
+                <p>Cape Town South Africa</p>
+                <p>Istanbul, Turkey</p>
+                <p>ECONOMY(H)</p>
+                <p>1</p>
+                <p>Confirmed</p>
+                <p>Meal,Non-smoking,Meal,Non-smoking</p>
+                <p></p>
+                <p></p>
+                <p></p>
+            </div>
+            <div class="departs">
+                <p>Departs:</p>
+                <p>Arrives:</p>
+                <p></p>
+                <p>Airport:</p>
+                <p>Airport:</p>
+                <p>Baggage:</p>
+                <p>Stops At:</p>
+                <p>Aircraft:</p>
+                <p></p>
+                <p></p>
+                <p>Vendor:</p>
+                <p>Locator:</p>
+            </div>
+            <div class="time">
+                <p>15:25 hrs</p>
+                <p>05:20 hrs(July 01)</p>
+                <p><p></p></p>
+                <p>CPT - Cape Town International</p>
+                <p>IST - Ataturk Arpt. Terminal</p>
+                <p>ADULT 30K</p>
+                <p>Johannesberg</p>
+                <p>Airbus Industrial 830</p>
+                <p></p>
+                <p></p>
+                <p>UTMXCX</p>
+                <p></p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

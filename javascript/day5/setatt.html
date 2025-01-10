@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <button id="set">Set</button>
+    <button id="remove">Remove</button>
+    <img  id="img" >
+
+    <script>
+        let btn1 = document.getElementById("set");
+        let btn2 = document.getElementById("remove");
+        let img = document.getElementById("img");
+
+        btn1.addEventListener("click",function(){
+            img.setAttribute("src", "https://cdn.pixabay.com/photo/2024/05/06/05/57/butterfly-8742569_960_720.jpg");
+            img.style.display = "block"
+        });
+
+        btn2.addEventListener("click",function(){
+            img.removeAttribute("src");
+            img.style.display = "none"
+
+        })
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List </title>
+    <link rel="stylesheet" href="todoStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Todo List</h1>
+
+        <div class="form_container">
+            <div class="form">
+                <input type="text" id="todoInput" placeholder="Add a new task..." class="input_space">
+                <button id="add">
+                    Add
+                </button>
+            </div>
+        </div>
+
+        <div id="todoList" class="todolist">
+            <!-- Todo items will be inserted here -->
+        </div>
+
+        <div class="timing">
+            <p id="currentTime"></p>
+        </div>
+    </div>
+
+    <script src="todo.js"></script>
+
+</body>
+
+</html>

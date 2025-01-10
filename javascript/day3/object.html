@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <script>
+        // object literal
+        // let emp = {
+        //     name: 'ankit',
+        //     city: "thane",
+        //     id:101
+        // }
+
+        // document.write(emp.name);
+        // console.log(emp.name,emp["city"],emp.id);
+
+        // let arrObj = [
+        //     "name","ankit", {id:101},
+        //     {city:["thane","mumbai","navi-mumbai"]}
+        // ]
+
+        // document.write(JSON.stringify(arrObj[2]))
+
+
+        const tskArrobj = [
+            10,20,30,"sam",[
+                true,false,{hobby:["sing","dance","swim"]}
+            ],
+            {city:"kerala",id:101}
+        ]
+
+        // true
+        // hobby:dance
+        // id:101
+        // document.write(JSON.stringify(tskArrobj))
+
+        document.write(tskArrobj[4][0] + "<br>" ,tskArrobj[4][2].hobby[1] +  "<br>")
+        document.write(JSON.stringify(tskArrobj[5].id))
+
+       
+    </script>
+</body>
+</html>

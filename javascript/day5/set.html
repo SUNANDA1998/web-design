@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #f1f1f1;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="btns">
+        <button onclick="addimg()">Click Me</button>
+        <button onclick="removeimg()">Click me</button>
+    </div>
+
+    <img id="dynimg">
+
+    <script>
+        function addimg() {
+            var img = document.getElementById("dynimg");
+            img.setAttribute( "src","https://cdn.pixabay.com/photo/2024/05/06/05/57/butterfly-8742569_960_720.jpg");
+        }
+        function removeimg() {
+          document.getElementsByTagName("img")[0].removeAttribute("img"); 
+        }
+    </script>
+    <!-- <img id="image">
+
+    <script>
+         var img1Tag=document.getElementById("image");
+        img1Tag.setAttribute("src","https://cdn.pixabay.com/photo/2021/12/29/18/59/st-petersburg-6902540_960_720.jp");
+        img1Tag.setAttribute("alt","")
+
+        var tagChng = document.getElementById("jhj");
+        tagChng.setAttribute("style","background-color: red;color:white;font-size:20px")
+    </script> -->
+</body>
+</html>

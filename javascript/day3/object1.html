@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var emp = new Object();
+
+        // emp.name = "sam";
+        // emp.age = 26;
+        // emp.sal = 30000;
+        // emp.city = "thane"
+
+        // document.write(JSON.stringify(emp))
+
+
+
+        // var emp = new Object();
+        // var stud = new Array();
+
+        // stud[0]="alam";
+        // stud[1]=21
+
+        // document.write(stud)
+
+        // emp.name = "sam";
+        // emp.age = 26;
+        // emp.sal = 30000;
+        // emp.city = "thane"
+
+        // document.write(JSON.stringify(emp))
+
+// with parameter:-
+//         function book(author,subject,numb){
+//                     this.sub=subject;
+//                     this.auth=author;
+//                     this.num=numb;
+//         }
+
+//         var fetch_data= new book("stan lee","marvel",101)
+
+//         document.write(fetch_data.sub)
+//         document.write(fetch_data.auth)
+//         document.write(fetch_data.num)
+
+// without parameter:-
+    function Book(){
+        this.sub="";
+        this.author="";
+        }
+
+        var fetch_data= new Book();
+
+        fetch_data.sub = "marvel";
+        fetch_data.author = "stan lee";
+
+        document.write(fetch_data.sub);
+        document.write("<br>");
+        document.write(fetch_data.author);
+       
+    </script>
+</body>
+</html>

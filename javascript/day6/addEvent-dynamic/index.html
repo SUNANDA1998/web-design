@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motion</title>
+    <style>
+       
+        .cursor {
+            position: absolute;
+            width: 100px;
+            height: 68px;
+            background-image: url("download.png");
+            background-size: cover; 
+            cursor: pointer;
+            transition: ease-in-out .8s;
+        }
+    </style>
+</head>
+<body>
+    <div class="cursor"></div>
+    <script>
+        const cursor = document.querySelector('.cursor');
+            document.addEventListener('mouseover', function(a) {
+            cursor.style.top = `${a.clientY}px`;
+            cursor.style.left = `${a.clientX}px`;
+            console.log(cursor);
+        });
+    </script>
+
+</body>
+</html>

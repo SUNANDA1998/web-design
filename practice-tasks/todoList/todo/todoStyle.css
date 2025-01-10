@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #5f9ea0;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.container {
+  max-width: 42rem;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.container h1 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.form_container {
+  margin-bottom: 1.5rem;
+}
+
+.form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.input_space {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border-width: 1px;
+  font-size: 1rem;
+}
+
+.form button {
+  padding: 0.5rem 1rem;
+  background-color: #5f9ea0;
+  color: #fff;
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+}
+
+.form button:hover {
+  background-color: #3a7a7f;
+}
+
+.timing {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #6b7280;
+}
+
+.todolist {
+  margin-top: 0.75rem;
+}
+
+.todoItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f9fafb;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  margin: 1rem;
+}
+
+.list-item {
+  flex: 1;
+}
+
+.list-item .task {
+  color: #1f2937;
+}
+
+.list-item .time {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: #6b7280;
+}

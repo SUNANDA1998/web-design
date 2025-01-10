@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .readmore-Text {
+         display: none;
+        }
+        p{
+            background-color: blue;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+
+    <p>hello</p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, fuga.
+        <span style="color: black;font-size: 20px;" class="readmore-Text">
+            hello how are  u
+            suscipit earum omnis nulla corrupti molestias facilis architect
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, ex. 
+        </span>
+       
+    </p>
+    <a class="moreless-button" href="#">Read more</a> 
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+
+    <script>
+    // read more readless
+    $('.moreless-button').click(function() 
+    {
+        $('.readmore-Text').toggle(1000);
+        if ($('.moreless-button').text() 
+            == "Read more") {
+             $(this).text("Read less")
+        } else {
+            $(this).text("Read more")
+        }
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Method</title>
+</head>
+<body>
+    <!--
+    1st define new Date()
+    DATE METHODS
+    getFullYear()     YYYY
+    getMonth()        month  (0-11)
+    getDate()	      day  (1-31)
+    getDay()	      weekday  (0-6) // Sunday - Saturday : 0 - 6
+    getHours()	      hour (0-23)
+    getMinutes()	  minute (0-59)
+    getSeconds()	  second (0-59)
+    getMilliseconds() millisecond (0-999)
+    getTime() 
+     -->
+
+     <div id="clock"></div>
+    <script>
+        // 1st to initalize date
+
+        // var d = new Date();
+        // document.write(d);
+
+        
+
+        // --------------------------------------------------------------------------
+        // var a=10;
+        // var b=20;
+        // var res=a+b;
+        // document.write(`addition of ${a} & ${b} is ${res}`)
+        
+        // const d = new Date();
+        // const formattedDate = `
+        // ${d.getDay()}
+        // ${d.getDate()}//${d.getMonth()+1}//${d.getFullYear()} 
+        // ${d.getHours()}:
+        // ${d.getMinutes()}:${d.getSeconds()}
+        //  `;
+        // document.write(formattedDate);
+
+        const d = new Date();
+    // //     // // // array
+        const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+        const dayName = days[d.getDay()];
+        const months = [ "January", "February", "March","April","May","June","July","August","September","October","November","December",]
+        const monthName = months[d.getMonth()];
+
+
+        const formattedDate = `
+        ${dayName}, 
+        ${monthName}, 
+
+        ${d.getDate()}/${d.getMonth()+1}/${d.getFullYear()} 
+        ${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}`;
+
+        document.write(formattedDate);
+
+
+         
+
+
+        // --------------------------------------------------------------------------
+
+        // const d = new Date();
+
+        /*
+        if hour 12 false the AM PM is disappeared
+        In 24-hour format,  "AM" and "PM" indicators are not 
+        applicable bcoz  24-hour format doesnt require them. 
+        24-hour format, time range from 00:00 (midnight) to 23:59.
+
+         */
+        // object
+        // const options = { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true };
+        // const formattedTime = d.toLocaleTimeString('en', options);
+        // document.write(formattedTime);
+
+        // --------------------------------------------------------------------------
+
+        // to get seconds dynamically
+        // function updateTime() {
+        // const d = new Date();
+        // const options = { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true };
+        // const formattedTime = d.toLocaleTimeString('en', options);
+        // document.getElementById('clock').innerHTML = formattedTime;
+        // }
+
+    // //     // Update every second
+        // setInterval(updateTime, 3000);
+
+        // updateTime();
+    </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form method="post">
+        <label for="form_name">Name</label>
+        <input type="text" id="form_name" name="name" required placeholder="enter your name"> <br> <br>
+
+        <label for="form_email">Email</label>
+        <input type="email" id="form_email" name="email" required placeholder="enter your email"> <br> <br>
+    
+        <label for="form_pass">Password</label>
+        <input type="password" id="form_pass" name="password" maxlength="5" placeholder="enter your password"> <br> <br>
+
+        <label for="form_num">Number</label>
+        <input type="number" id="form_pass" name="number"> <br> <br>
+
+        <label for="text_area">type message</label>
+        <input type="text" id="text_area" name="message"  cols="3"> <br> <br>
+
+        <input type="date">
+        <input type="time">
+        <br><br>
+
+        <label for="selectlist">Select your courses</label>
+        <select name="select" id="selectlist">
+            <option value="select">select</option>
+            <option value="BE">BE</option>
+            <option value="BCA">BCA</option>
+            <option value="MCA">MCA</option>
+        </select>
+        <br><br>
+        <span>Gender</span>
+        <br><br>
+
+        <label for="male">male</label>
+        <input type="radio" name="Gender" value="male" id="male">
+
+        <label for="female">female</label>
+        <input type="radio" name="Gender" value="female" id="male">
+        <br><br>
+    
+       
+        <input type="color">
+        <input type="file">
+
+        <span>checkboxs</span>
+        <input type="checkbox">Audi
+        <input type="checkbox">Bmw
+        <input type="checkbox">Mercedes
+
+        <br><br>
+
+        <!-- <label for="fruit">Choose a fruit</label> -->
+        <!-- without list and id attribute it will not work -->
+        
+        <!-- <input type="text" id="fruit" name="frui" list="car-list"> -->
+        
+        <!-- <datalist>
+            <option value="Hyundai"></option>
+            <option value="Lamborgini"></option>
+            <option value="Tesla"></option>
+        </datalist> -->
+        
+        <br> <br>
+        
+        <input type="submit" value="submit form">
+    
+    </form>
+</body>
+</html>

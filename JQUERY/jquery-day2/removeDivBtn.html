@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>remove div</title>
+    <style>
+        html {
+        margin: 0;
+        padding: 0;
+    }
+
+body {
+	margin: 0;
+	padding: 10px;
+	background-color: rgb(42, 43, 44);
+}
+
+h1 {
+	color: #dadada;
+	margin-bottom: 50px;
+    text-transform: capitalize;
+}
+
+.div1 {
+	padding: 25px;
+	max-width: 295px;
+	border: 1px solid rgb(66, 66, 66);
+	background-color: #eec513;
+	margin-top: 20px;
+	text-align: justify;
+}
+
+.removeDiv {
+	display: block;
+	margin-top: 20px;
+	cursor: pointer;
+}
+    </style>
+</head>
+<body>
+
+    <h1>Demo to remove html elements with jQuery fadeOut & remove effect.</h1>
+    <div>
+        <div id="div1" class="div1">
+            This is some text in the div.
+            <p>This is a paragraph in the div.</p>
+            <p>This is another paragraph in the div.</p>
+        </div>
+    </div>
+
+    <button id="remove-btn" class="removeDiv">Remove above div</button>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+    <script>
+        $(document).ready(function () {
+        $("#remove-btn").click(function () {
+            $("#div1").fadeOut()
+
+            // to remove the button
+            // $(this).fadeOut("fast", function () {
+            // 	$(this).remove();
+            // });
+	});
+
+});
+    </script>
+</body>
+</html>

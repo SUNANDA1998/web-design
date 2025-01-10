@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <style>
+        ::placeholder{
+            color: pink;
+        }
+
+        input[type="radio"]{
+            background-color: red;
+        }
+
+
+        input{
+            font-size: 16px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: blueviolet;">Faq</h1>
+
+    <form method="post">
+        <div style="display: flex;">
+              <div>
+              <label for="form_name">Name</label>
+              <input type="text" id="form_name" name="name" required placeholder="enter ur name"> <br> <br>
+             </div>
+            <div>
+              <label for="form_email" >Email</label>
+              <input type="email" id="form_email" name="email" required placeholder="enter ur email">  <br> <br>
+            </div>
+        </div>
+          <label for="form_pass" >Password</label>
+          <input type="password" id="form_pass" name="password" maxlength="5" required><br> <br>
+  
+          <label for="form_num" >Number</label>
+          <input type="number" id="form_num" name="number" required>  <br> <br>
+  
+          <label for="textarea">type message</label>
+          <textarea name="text" id="textarea" cols="3" rows="2">tye msg</textarea> <br> <br>
+  
+          <label for="selectList">select your choices</label>
+          <select name="select" id="selectList">
+              <option value="select">Select</option>
+              <option value="Earrings">Earrings</option>
+              <option value="Bangle">Bangle</option>
+              <option value="Necklace">Necklace</option>
+              <option value="Rings">Rings</option>
+              <option value="Solitaires">Solitaires</option>
+              <option value="Maang Tikka">Maang Tikka</option>
+              
+          <br> <br>
+      
+          <span>Gender</span>
+          <br><br>
+  
+          <label for="male">male</label>
+          <input type="radio" name="Gender" value="male" id="male">
+  
+          <label for="female">female</label>
+          <input type="radio" name="Gender" value="female" id="male">
+          <br><br>
+      
+          <input type="color">
+          <input type="file">
+          <br> <br>
+  
+          <span>checkboxes</span>
+          <input type="checkbox">Gold
+          <input type="checkbox">Silver
+          <input type="checkbox">Diamond
+          <!-- <input type="checkbox"> -->
+
+          <br> <br>
+  
+          <input type="date">
+          <input type="time">
+         
+          <br> <br>
+          <input type="submit" value="submit form">
+      </form>
+</body>
+</html>
